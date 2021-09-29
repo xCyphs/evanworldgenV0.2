@@ -1,7 +1,7 @@
 {
     "name": "Tropical Beach",
     "derivative": "JUNGLE",
-    "rarity": 1,
+    "rarity": 3,
     "color": "#91CF30",
     "vanillaDerivative": "JUNGLE",
     "generators": [{
