@@ -3,6 +3,7 @@ The standard overworld for Iris. New and Improved!
 
 
 Contributors & creators:
+-[Cyphs](https://github.com/xCyphs) Made the biomes actually look good.
 - [Astrash](https://github.com/Astrashh) (A lot of biomes, objects, generator configurations, caves, jigsaw structures For v2. His pack here: [Continents](https://github.com/Astrashh/Continents))
 - [ArMiN231](https://github.com/ArMiN231)
 - [Brian](https://github.com/NextdoorPsycho) (Created the origin (overworld v1) content in the pack. most of the objects and biomes are of his making, and free to use for anyone who owns iris)
@@ -12,6 +13,7 @@ Contributors & creators:
 - [K530](https://github.com/K530-hub) (Biome reworks, and mountain generation)
 - [RaydenKonig](https://github.com/RaydenKonig) (Innovative ideas and configurations)
 - [Strangeone101](https://github.com/StrangeOne101) (Biome, Generator, and Cave generation creation and modification)
+
 
 Great thanks to these people for contributing to the pack.
 If you want to contribute as well, feel free to make a fork and pull requests.
