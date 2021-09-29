@@ -1,0 +1,260 @@
+{
+    "name": "Tropical",
+    "color": "#0F3415",
+    "landBiomes": [
+        "tropical/rainforest",
+        "tropical/plains",
+        "tropical/bamboo-forest",
+        "tropical/rainforest-wicked",
+        "tropical/volcanic-plains",
+        "tropical/mountain",
+        "tropical/mountain-extreme",
+        "tropical/mountain-plains",
+        "tropical/wilds",
+        "tropical/plains-hills"
+    ],
+    "shoreBiomes": [
+        "tropical/island-beach",
+        "tropical/beach",
+        "tropical/submerged-volcanic",
+        "tropical/beach-bamboo"
+    ],
+    "seaBiomes": [
+        "tropical/submerged-volcanic",
+        "tropical/sea/ocean",
+        "tropical/sea/river-soft"
+    ],
+    "carving": {
+        "ravines": [{
+            "rarity": 170,
+            "ravine": "jungle/main"
+        }],
+        "caves": [
+            {
+                "breakSurface": true,
+                "cave": "volcanic/main",
+                "rarity": 150,
+                "caveStartHeight": {
+                    "max": 267,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "drip/main",
+                "rarity": 56,
+                "caveStartHeight": {
+                    "max": 200,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "rocky/main",
+                "rarity": 150,
+                "caveStartHeight": {
+                    "max": 80,
+                    "min": 58,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "jungle/main",
+                "rarity": 30,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 75,
+                    "style": {"style": "STATIC"}
+                }
+            }
+        ]
+    },
+    "biomeImplosionRatio": 0.25,
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4.77,
+        "fracture": {
+            "multiplier": 240,
+            "style": "NOWHERE",
+            "zoom": 5
+        }
+    },
+    "jigsawStructures": [{
+        "structure": "murky_stronghold",
+        "rarity": 250
+    }],
+    "deposits": [{
+        "minHeight": 25,
+        "maxPerChunk": 3,
+        "maxHeight": 40,
+        "minPerChunk": 1,
+        "minSize": 1,
+        "maxSize": 2,
+        "palette": [{"block": "minecraft:emerald_ore"}],
+        "varience": 2
+    }],
+    "entitySpawners": [
+        "tropical/land-passive",
+        "tropical/land-hostile",
+        "tropical/land-hostile-day",
+        "tropical/land-cave",
+        "tropical/beach"
+    ],
+    "landBiomeZoom": 5.5,
+    "shoreHeightMin": 3.2,
+    "shoreHeightMax": 9.2,
+    "loot": {
+        "mode": "ADD",
+        "multiplier": 1,
+        "tables": [
+            "global-clutter",
+            "global-tools",
+            "tropical-treasure",
+            "tropical-food",
+            "forest-food"
+        ]
+    },
+    "objects": [
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "trees": [{
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }],
+                "treeTypes": [
+                    "JUNGLE",
+                    "JUNGLE_BUSH"
+                ]
+            }],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:jungle_log"}],
+                    "replace": {"palette": [{"block": "minecraft:jungle_wood"}]}
+                },
+                {
+                    "find": [
+                        {"block": "minecraft:oak_log"},
+                        {"block": "minecraft:oak_wood"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:jungle_wood"}]}
+                }
+            ],
+            "translate": {"y": -1},
+            "place": [
+                "trees/jungle/cocogeneric2",
+                "trees/jungle/cocogeneric3",
+                "trees/jungle/cocogeneric4",
+                "trees/jungle/cocogeneric5",
+                "trees/jungle/lgeneric1",
+                "trees/jungle/lgeneric2",
+                "trees/jungle/lgeneric3",
+                "trees/jungle/lgeneric4",
+                "trees/jungle/lgeneric5",
+                "trees/jungle/lgeneric6",
+                "trees/jungle/lgeneric7",
+                "trees/jungle/lgeneric8",
+                "trees/jungle/lgeneric9"
+            ]
+        },
+        {
+            "heightmap": {
+                "seed": 1337,
+                "style": {
+                    "style": "SIMPLEX",
+                    "multiplier": 10
+                },
+                "offsetY": 5
+            },
+            "chance": 0.05,
+            "bottom": true,
+            "density": 1,
+            "place": [
+                "structures/amethyst1",
+                "structures/amethyst2",
+                "structures/amethyst3",
+                "structures/amethyst4",
+                "structures/amethyst5",
+                "structures/amethyst6"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:glass"}],
+                "replace": {"palette": [{"block": "minecraft:void_air"}]}
+            }],
+            "enabled": true,
+            "xAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "yAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "translate": {
+                "yRandom": 10,
+                "y": 2
+            }
+        },
+        {
+            "name": "standard-surface-portals",
+            "chance": 0.001,
+            "place": [
+                "clutter/swordnp2",
+                "clutter/swordnp1",
+                "structures/giantportal1",
+                "structures/giantportal2",
+                "structures/giantportal3",
+                "structures/portal1",
+                "structures/portal2",
+                "structures/portal3",
+                "structures/portal4",
+                "structures/portal5",
+                "structures/portal6",
+                "structures/portal7",
+                "structures/portal8",
+                "structures/portal9",
+                "structures/portal10"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:gold_block"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]},
+                    "chance": 0.1
+                },
+                {
+                    "find": [{"block": "minecraft:netherrack"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.07
+                },
+                {
+                    "find": [{"block": "minecraft:obsidian"}],
+                    "replace": {"palette": [{"block": "minecraft:crying_obsidian"}]},
+                    "chance": 0.15
+                },
+                {
+                    "find": [{"block": "minecraft:lava"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.2
+                }
+            ],
+            "mode": "FAST_MIN_HEIGHT",
+            "carvingSupport": "SURFACE_ONLY"
+        }
+    ],
+    "shoreHeightZoom": 2.14,
+    "rarity": 3
+}

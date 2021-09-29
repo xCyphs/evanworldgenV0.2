@@ -1,0 +1,5 @@
+{
+    "maxDepth": 20,
+    "pieces": ["mansion/main/a1"],
+    "terminate": true
+}

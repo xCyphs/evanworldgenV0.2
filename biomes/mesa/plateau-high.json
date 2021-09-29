@@ -1,0 +1,87 @@
+{
+    "name": "Mesa Plateau High",
+    "rarity": 1,
+    "color": "#5B4111",
+    "derivative": "BADLANDS",
+    "vanillaDerivative": "BADLANDS",
+    "biomeScatter": [
+        "BADLANDS",
+        "BADLANDS_PLATEAU",
+        "ERODED_BADLANDS"
+    ],
+    "children": ["mesa/plateau-dirt-high"],
+    "generators": [{
+        "min": 45,
+        "max": 58,
+        "generator": "cracked-cliffs"
+    }],
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {"style": "IRIS"},
+            "zoom": 0.4,
+            "palette": [
+                {"block": "minecraft:red_terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:orange_terracotta"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:white_terracotta"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:yellow_terracotta"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        }
+    ],
+    "lockLayers": true,
+    "decorators": [{
+        "chance": 0.05,
+        "palette": [{"block": "minecraft:tall_grass"}]
+    }],
+    "biomeStyle": {"style": "SIMPLEX"},
+    "objects": [{
+        "place": [
+            "structures/tower",
+            "structures/tower-twin"
+        ],
+        "chance": 5.0E-4,
+        "density": 2,
+        "mode": "FAST_STILT",
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": -360,
+                "max": 360
+            }
+        }
+    }]
+}

@@ -1,0 +1,12 @@
+{
+    "spawns": [
+        {
+            "entity": "standard/passive/villager",
+            "rarity": 1
+        },
+        {
+            "entity": "standard/passive/golem",
+            "rarity": 24
+        }
+    ]
+}

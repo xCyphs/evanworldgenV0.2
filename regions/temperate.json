@@ -1,0 +1,290 @@
+{
+    "name": "Temperate",
+    "color": "#8BD03C",
+    "landBiomes": [
+        "temperate/plateau",
+        "temperate/stranged-plains",
+        "temperate/longtree-forest",
+        "temperate/osaka-violet-forest",
+        "temperate/combo-forest",
+        "temperate/plains",
+        "temperate/oak-forest",
+        "temperate/osaka-red-forest",
+        "temperate/birch-forest",
+        "temperate/reaching-forest",
+        "temperate/lush-plains"
+    ],
+    "shoreBiomes": [
+        "temperate/shore/beach",
+        "temperate/shore/oak-beach"
+    ],
+    "seaBiomes": [
+        "temperate/sea/river",
+        "ocean/deep"
+    ],
+    "riverBiomes": ["temperate/sea/river"],
+    "jigsawStructures": [{
+        "structure": "murky_stronghold",
+        "rarity": 250
+    }],
+    "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+    "entitySpawners": [
+        "temperate/land-passive",
+        "temperate/land-hostile",
+        "temperate/land-cave"
+    ],
+    "shoreRatio": 0.1,
+    "shoreBiomeZoom": 0.15,
+    "biomeImplosionRatio": 0.7,
+    "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 3,
+        "maxHeight": 122,
+        "minPerChunk": 1,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "minecraft:iron_ore"},
+            {"block": "minecraft:coal_ore"}
+        ],
+        "varience": 4
+    }],
+    "objects": [
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "trees": [{
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }],
+                "treeTypes": [
+                    "TREE",
+                    "BIG_TREE"
+                ]
+            }],
+            "place": [
+                "trees/oak/truegeneric1",
+                "trees/oak/truegeneric2",
+                "trees/oak/truegeneric3",
+                "trees/oak/truegeneric4",
+                "trees/oak/truegeneric5"
+            ]
+        },
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "trees": [{
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }],
+                "treeTypes": [
+                    "TREE",
+                    "BIG_TREE"
+                ]
+            }],
+            "place": [
+                "trees/oak/antioch3",
+                "trees/oak/antioch4",
+                "trees/oak/antioch5",
+                "trees/oak/antioch6",
+                "trees/oak/antioch7",
+                "trees/oak/antioch8",
+                "trees/oak/antioch9",
+                "trees/oak/antioch10",
+                "trees/oak/antioch11",
+                "trees/oak/antioch12",
+                "trees/oak/antioch13"
+            ]
+        },
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "trees": [{
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }],
+                "treeTypes": ["BIRCH"]
+            }],
+            "place": [
+                "trees/birch/antioch3",
+                "trees/birch/antioch4",
+                "trees/birch/antioch5",
+                "trees/birch/antioch6",
+                "trees/birch/antioch7",
+                "trees/birch/antioch8",
+                "trees/birch/antioch9",
+                "trees/birch/antioch10",
+                "trees/birch/antioch11",
+                "trees/birch/antioch12",
+                "trees/birch/antioch13"
+            ]
+        },
+        {
+            "heightmap": {
+                "seed": 1337,
+                "style": {
+                    "style": "SIMPLEX",
+                    "multiplier": 10
+                },
+                "offsetY": 5
+            },
+            "chance": 0.05,
+            "bottom": true,
+            "density": 1,
+            "place": [
+                "structures/amethyst1",
+                "structures/amethyst2",
+                "structures/amethyst3",
+                "structures/amethyst4",
+                "structures/amethyst5",
+                "structures/amethyst6"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:glass"}],
+                "replace": {"palette": [{"block": "minecraft:void_air"}]}
+            }],
+            "enabled": true,
+            "xAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "yAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "translate": {
+                "yRandom": 10,
+                "y": 2
+            }
+        },
+        {
+            "name": "standard-surface-portals",
+            "chance": 0.001,
+            "place": [
+                "clutter/swordnp2",
+                "clutter/swordnp1",
+                "structures/giantportal1",
+                "structures/giantportal2",
+                "structures/giantportal3",
+                "structures/portal1",
+                "structures/portal2",
+                "structures/portal3",
+                "structures/portal4",
+                "structures/portal5",
+                "structures/portal6",
+                "structures/portal7",
+                "structures/portal8",
+                "structures/portal9",
+                "structures/portal10"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:gold_block"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]},
+                    "chance": 0.1
+                },
+                {
+                    "find": [{"block": "minecraft:netherrack"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.07
+                },
+                {
+                    "find": [{"block": "minecraft:obsidian"}],
+                    "replace": {"palette": [{"block": "minecraft:crying_obsidian"}]},
+                    "chance": 0.15
+                },
+                {
+                    "find": [{"block": "minecraft:lava"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.2
+                }
+            ],
+            "mode": "FAST_MIN_HEIGHT",
+            "carvingSupport": "SURFACE_ONLY"
+        }
+    ],
+    "carving": {
+        "ravines": [
+            {
+                "rarity": 421,
+                "ravine": "drip/main"
+            },
+            {
+                "rarity": 271,
+                "ravine": "rocky/main"
+            }
+        ],
+        "caves": [
+            {
+                "breakSurface": true,
+                "cave": "drip/main",
+                "rarity": 28,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "rocky/main",
+                "rarity": 14,
+                "caveStartHeight": {
+                    "max": 80,
+                    "min": 58,
+                    "style": {"style": "STATIC"}
+                }
+            }
+        ]
+    },
+    "riverRarity": 1,
+    "landBiomeZoom": 5.5,
+    "riverStyle": {
+        "style": "GLOB_IRIS_DOUBLE",
+        "zoom": 4.925,
+        "exponent": 3.1
+    },
+    "shoreHeightMin": 1,
+    "shoreHeightMax": 5.2,
+    "loot": {
+        "mode": "ADD",
+        "multiplier": 1,
+        "tables": [
+            "global-tools",
+            "global-treasure",
+            "temperate-clutter",
+            "temperate-food"
+        ]
+    },
+    "shoreHeightZoom": 1.14,
+    "riverThickness": 0.025
+}

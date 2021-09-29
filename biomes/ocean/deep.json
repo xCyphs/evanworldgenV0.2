@@ -1,0 +1,149 @@
+{
+    "name": "Ocean Deep",
+    "derivative": "DEEP_OCEAN",
+    "color": "#3192BF",
+    "vanillaDerivative": "DEEP_OCEAN",
+    "generators": [{
+        "generator": "smooth-dunes",
+        "max": -30,
+        "min": -50
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "style": {"style": "IRIS"},
+            "zoom": 0.6,
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:clay"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 10,
+            "palette": [{"block": "minecraft:gravel"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.09,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 12,
+            "partOf": "SEA_FLOOR"
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:seagrass"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{
+                "block": "minecraft:tall_seagrass",
+                "data": {"half": "lower"}
+            }],
+            "topPalette": [{
+                "block": "minecraft:tall_seagrass",
+                "data": {"half": "upper"}
+            }],
+            "partOf": "SEA_FLOOR"
+        }
+    ],
+    "objects": [
+        {
+            "underwater": true,
+            "waterloggable": true,
+            "chance": 0.008,
+            "mode": "FAST_MIN_HEIGHT",
+            "bottom": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": 0,
+                    "max": 360
+                }
+            },
+            "place": [
+                "structures/gall1",
+                "structures/gall2",
+                "structures/gall3"
+            ]
+        },
+        {
+            "place": [
+                "structures/shipgenericw",
+                "structures/shipgenericc",
+                "structures/shipgenericr",
+                "structures/shipgenericu",
+                "structures/shipgenericc"
+            ],
+            "chance": 0.001,
+            "markers": [
+                {
+                    "mark": [
+                        {
+                            "block": "minecraft:spruce_planks"
+                        }
+                    ],
+                    "maximumMarkers": 5,
+                    "marker": "skelepirate"
+                }
+            ],
+            "onwater": true,
+            "translate": {"y": -1},
+            "waterloggable": true
+        },
+        {
+            "underwater": true,
+            "waterloggable": true,
+            "chance": 0.01,
+            "mode": "FAST_MIN_HEIGHT",
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "place": [
+                "structures/shipwithmast",
+                "structures/shipwithmastdegraded",
+                "structures/shiprightsideupfull",
+                "structures/shiprightsideupfulldegraded",
+                "structures/shiprightsideupfronthalf",
+                "structures/shiprightsideupfronthalfdegraded",
+                "structures/shiprightsideupbackhalf",
+                "structures/shiprightsideupbackhalfdegraded",
+                "structures/shipsidewaysfull",
+                "structures/shipsidewaysfulldegraded",
+                "structures/shipsidewaysfronthalf",
+                "structures/shipsidewaysfronthalfdegraded",
+                "structures/shipsidewaysbackhalf",
+                "structures/shipsidewaysbackhalfdegraded",
+                "structures/shipupsidedownfull",
+                "structures/shipupsidedownfulldegraded",
+                "structures/shipupsidedownfronthalf",
+                "structures/shipupsidedownfronthalfdegraded",
+                "structures/shipupsidedownbackhalf",
+                "structures/shipupsidedownbackhalfdegraded"
+            ]
+        }
+    ]
+}

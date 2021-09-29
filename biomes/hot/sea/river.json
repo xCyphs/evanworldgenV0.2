@@ -1,0 +1,44 @@
+{
+    "name": "Hot river",
+    "vanillaDerivative": "DESERT_LAKES",
+    "color": "#081820",
+    "derivative": "DESERT_LAKES",
+    "generators": [{
+        "generator": "plain",
+        "max": -15,
+        "min": -5
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "VASCULAR"},
+            "zoom": 0.4,
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:clay"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:brown_terracotta"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                }
+            ]
+        }
+    ]
+}

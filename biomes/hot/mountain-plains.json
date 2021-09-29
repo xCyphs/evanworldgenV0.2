@@ -1,0 +1,48 @@
+{
+    "name": "Hot Mountain Plains",
+    "derivative": "DESERT",
+    "rarity": 1,
+    "color": "#BFA431",
+    "vanillaDerivative": "DESERT",
+    "generators": [{
+        "generator": "smooth-dunes",
+        "max": 8,
+        "min": 11
+    }],
+    "layers": [
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:red_sand"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 23,
+            "palette": [{"block": "minecraft:red_sandstone"}]
+        }
+    ],
+    "jigsawStructures": [
+        {
+            "rarity": 1700,
+            "structure": "pillager_outpost"
+        },
+        {
+            "rarity": 1500,
+            "structure": "village-hot"
+        },
+        {
+            "rarity": 1900,
+            "structure": "desert-pyramid"
+        }
+    ],
+    "decorators": [{
+        "chance": 0.001,
+        "variance": {"style": "STATIC"},
+        "stackMax": 5,
+        "style": {"style": "STATIC"},
+        "palette": [{"block": "minecraft:cactus"}],
+        "heightVariance": {"style": "STATIC"},
+        "stackMin": 1
+    }],
+    "wall": {"palette": [{"block": "minecraft:gray_terracotta"}]}
+}

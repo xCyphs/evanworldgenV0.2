@@ -1,0 +1,429 @@
+{
+    "name": "Hot",
+    "color": "#E7D900",
+    "landBiomes": [
+        "hot/desert-dunes",
+        "hot/desert-dunes-red",
+        "savanna/forest",
+        "savanna/savanna",
+        "savanna/forest",
+        "savanna/plateau",
+        "savanna/acacia-denmyre",
+        "mesa/plateau",
+        "mesa/valleys",
+        "mesa/plateau-high",
+        "mesa/valleys",
+        "mesa/mesa",
+        "mesa/cliffs"
+    ],
+    "shoreBiomes": ["hot/shore/beach"],
+    "seaBiomes": ["hot/sea/ocean"],
+    "entitySpawners": [
+        "hot/land-passive",
+        "hot/land-hostile",
+        "hot/land-cave"
+    ],
+    "riverStyle": {
+        "style": "VASCULAR",
+        "zoom": 4.77,
+        "fracture": {
+            "multiplier": 240,
+            "style": "NOWHERE",
+            "zoom": 5
+        }
+    },
+    "spotBiomes": [{
+        "biome": "hot/oasis",
+        "scale": 5,
+        "type": "SEA",
+        "shuffle": 328,
+        "rarity": 15
+    }],
+    "jigsawStructures": [{
+        "structure": "murky_stronghold",
+        "rarity": 250
+    }],
+    "biomeImplosionRatio": 0.25,
+    "deposits": [
+        {
+            "minHeight": 25,
+            "maxPerChunk": 3,
+            "maxHeight": 50,
+            "minPerChunk": 1,
+            "minSize": 3,
+            "maxSize": 4,
+            "palette": [{"block": "minecraft:gold_ore"}],
+            "varience": 5
+        },
+        {
+            "minHeight": 15,
+            "maxPerChunk": 2,
+            "maxHeight": 35,
+            "minPerChunk": 1,
+            "minSize": 3,
+            "maxSize": 5,
+            "palette": [{"block": "minecraft:lapis_ore"}],
+            "varience": 5
+        },
+        {
+            "minHeight": 22,
+            "maxPerChunk": 12,
+            "maxHeight": 81,
+            "minPerChunk": 7,
+            "minSize": 12,
+            "maxSize": 22,
+            "palette": [
+                {
+                    "data": {"axis": "x"},
+                    "block": "minecraft:basalt"
+                },
+                {
+                    "data": {"axis": "y"},
+                    "block": "minecraft:basalt"
+                },
+                {
+                    "data": {"axis": "z"},
+                    "block": "minecraft:basalt"
+                }
+            ],
+            "varience": 4
+        }
+    ],
+    "landBiomeZoom": 5,
+    "effects": [
+        {
+            "potionTicksMin": 87,
+            "potionEffect": "CONFUSION",
+            "chance": 1200,
+            "potionStrength": 0,
+            "potionTicksMax": 67,
+            "interval": 500
+        },
+        {
+            "particleAltX": 0.001,
+            "particleAltY": 0.00885,
+            "particleAltZ": 0.001,
+            "chance": 2,
+            "particleEffect": "CAMPFIRE_SIGNAL_SMOKE",
+            "particleOffset": 0,
+            "interval": 1350,
+            "particleCount": 0
+        }
+    ],
+    "blockDrops": [{
+        "drops": [
+            {
+                "minAmount": 1,
+                "type": "acacia_planks",
+                "maxAmount": 3
+            },
+            {
+                "type": "stripped_acacia_log",
+                "rarity": 12
+            },
+            {
+                "minAmount": 3,
+                "type": "stick",
+                "maxAmount": 5,
+                "rarity": 7
+            }
+        ],
+        "blocks": [
+            {"block": "minecraft:acacia_wood"},
+            {"block": "minecraft:acacia_log"},
+            {"block": "minecraft:stripped_acacia_wood"},
+            {"block": "minecraft:stripped_acacia_log"}
+        ],
+        "replaceVanillaDrops": true
+    }],
+    "objects": [
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "translate": {
+                "y": 0,
+                "yRandom": -1
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["ACACIA"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "place": [
+                "trees/acacia/savannaF1",
+                "trees/acacia/savannaF2",
+                "trees/acacia/savannaF3",
+                "trees/acacia/savannaF4",
+                "trees/acacia/savannaF5",
+                "trees/acacia/savannaF6",
+                "trees/acacia/savannaF7",
+                "trees/acacia/savannaF8",
+                "trees/acacia/savannaF9",
+                "trees/acacia/savannaF10",
+                "trees/acacia/savannaF11",
+                "trees/acacia/savannaF13",
+                "trees/acacia/savannaF14"
+            ]
+        },
+        {
+            "chance": 0,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "translate": {
+                "y": 0,
+                "yRandom": -1
+            },
+            "trees": [{
+                "anySize": true,
+                "treeTypes": [
+                    "TREE",
+                    "BIG_TREE"
+                ],
+                "sizes": [
+                    {
+                        "depth": 1,
+                        "width": 1
+                    },
+                    {
+                        "width": 2,
+                        "depth": 2
+                    }
+                ]
+            }],
+            "edit": [
+                {
+                    "find": [
+                        {"block": "minecraft:spruce_fence"},
+                        {"block": "minecraft:spruce_slab"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:acacia_wood"}]}
+                },
+                {
+                    "find": [
+                        {"block": "minecraft:oak_wood"},
+                        {"block": "minecraft:dark_oak_wood"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:acacia_wood"}]}
+                },
+                {
+                    "find": [
+                        {"block": "minecraft:oak_leaves"},
+                        {"block": "minecraft:dark_oak_leaves"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:acacia_leaves"}]}
+                }
+            ],
+            "place": [
+                "trees/oak/truegeneric1",
+                "trees/oak/truegeneric2",
+                "trees/oak/truegeneric3",
+                "trees/oak/truegeneric4",
+                "trees/oak/truegeneric5",
+                "trees/oak/hoakgeneric1",
+                "trees/oak/hoakgeneric2",
+                "trees/oak/hoakgeneric3",
+                "trees/oak/hoakgeneric4",
+                "trees/oak/hoakgeneric5",
+                "trees/oak/hoakgeneric6",
+                "trees/oak/hoakgeneric7",
+                "trees/oak/hoakgeneric8"
+            ]
+        },
+        {
+            "heightmap": {
+                "seed": 1337,
+                "style": {
+                    "style": "SIMPLEX",
+                    "multiplier": 10
+                },
+                "offsetY": 5
+            },
+            "chance": 0.05,
+            "bottom": true,
+            "density": 1,
+            "place": [
+                "structures/amethyst1",
+                "structures/amethyst2",
+                "structures/amethyst3",
+                "structures/amethyst4",
+                "structures/amethyst5",
+                "structures/amethyst6"
+            ],
+            "edit": [{
+                "find": [{"block": "minecraft:glass"}],
+                "replace": {"palette": [{"block": "minecraft:void_air"}]}
+            }],
+            "enabled": true,
+            "xAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "yAxis": {
+                "interval": 90,
+                "max": 360,
+                "min": 0
+            },
+            "translate": {
+                "yRandom": 10,
+                "y": 2
+            }
+        },
+        {
+            "name": "standard-surface-portals",
+            "chance": 0.001,
+            "place": [
+                "clutter/swordnp2",
+                "clutter/swordnp1",
+                "structures/giantportal1",
+                "structures/giantportal2",
+                "structures/giantportal3",
+                "structures/portal1",
+                "structures/portal2",
+                "structures/portal3",
+                "structures/portal4",
+                "structures/portal5",
+                "structures/portal6",
+                "structures/portal7",
+                "structures/portal8",
+                "structures/portal9",
+                "structures/portal10"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:gold_block"}],
+                    "replace": {"palette": [{"block": "minecraft:air"}]},
+                    "chance": 0.1
+                },
+                {
+                    "find": [{"block": "minecraft:netherrack"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.07
+                },
+                {
+                    "find": [{"block": "minecraft:obsidian"}],
+                    "replace": {"palette": [{"block": "minecraft:crying_obsidian"}]},
+                    "chance": 0.15
+                },
+                {
+                    "find": [{"block": "minecraft:lava"}],
+                    "replace": {"palette": [{"block": "minecraft:magma_block"}]},
+                    "chance": 0.2
+                }
+            ],
+            "mode": "FAST_MIN_HEIGHT",
+            "carvingSupport": "SURFACE_ONLY"
+        }
+    ],
+    "carving": {
+        "ravines": [
+            {
+                "rarity": 731,
+                "ravine": "drip/main"
+            },
+            {
+                "rarity": 331,
+                "ravine": "sandstone/main"
+            },
+            {
+                "rarity": 331,
+                "ravine": "red-sandstone/main"
+            }
+        ],
+        "caves": [
+            {
+                "breakSurface": true,
+                "cave": "sandstone/main",
+                "rarity": 20,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "red-sandstone/main",
+                "rarity": 20,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "mixed-sandstone/main",
+                "rarity": 10,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 88,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "drip/main",
+                "rarity": 46,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "drip/main",
+                "rarity": 56,
+                "caveStartHeight": {
+                    "max": 120,
+                    "min": 69,
+                    "style": {"style": "STATIC"}
+                }
+            },
+            {
+                "breakSurface": true,
+                "cave": "rocky/main",
+                "rarity": 87,
+                "caveStartHeight": {
+                    "max": 61,
+                    "min": 28,
+                    "style": {"style": "STATIC"}
+                }
+            }
+        ]
+    },
+    "shoreHeightMin": 3.2,
+    "shoreHeightMax": 6.2,
+    "loot": {
+        "mode": "ADD",
+        "multiplier": 1,
+        "tables": [
+            "global-tools",
+            "global-treasure",
+            "hot-food",
+            "hot-treasure",
+            "cactus-clutter"
+        ]
+    },
+    "shoreHeightZoom": 1.14,
+    "rarity": 2
+}

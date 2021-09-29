@@ -1,0 +1,60 @@
+{
+    "name": "Tropical Volcanoes Lava",
+    "derivative": "THE_VOID",
+    "vanillaDerivative": "THE_VOID",
+    "rarity": 1,
+    "color": "#50AF52",
+    "customDerivitives": [{
+        "category": "jungle",
+        "id": "tropical_volcanic_lava",
+        "grassColor": "#BDBF0B",
+        "foliageColor": "#BDBF0B",
+        "fogColor": "#DD793C",
+        "downfallType": "none"
+    }],
+    "effects": [{
+        "particleAltX": 0.001,
+        "particleAltY": 0.13885,
+        "particleAltZ": 0.001,
+        "chance": 1,
+        "particleEffect": "CAMPFIRE_SIGNAL_SMOKE",
+        "particleOffset": 0,
+        "interval": 200,
+        "particleCount": 0
+    }],
+    "generators": [{
+        "generator": "mountain",
+        "max": 180,
+        "min": 3
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        }
+    ],
+    "wall": {"palette": [
+        {
+            "block": "minecraft:lava",
+            "data": {"level": 1}
+        },
+        {"block": "minecraft:tuff"}
+    ]}
+}
