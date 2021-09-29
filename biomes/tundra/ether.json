@@ -2,7 +2,7 @@
     "name": "Tundra Ether",
     "derivative": "MOUNTAINS",
     "color": "#164598",
-    "rarity": 13,
+    "rarity": 6,
     "vanillaDerivative": "TAIGA_MOUNTAINS",
     "generators": [{
         "generator": "smooth-dunes",
