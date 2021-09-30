@@ -1,7 +1,7 @@
 {
     "name": "Mesa Valley",
     "derivative": "SAVANNA",
-    "rarity": 1,
+    "rarity": 2,
     "color": "#644F29",
     "vanillaDerivative": "BADLANDS",
     "generators": [{

@@ -2,7 +2,7 @@
     "name": "Tropical Rainforest",
     "derivative": "JUNGLE",
     "vanillaDerivative": "JUNGLE",
-    "rarity": 1,
+    "rarity": 2,
     "color": "#20DF24",
     "children": [
         "tropical/rainforest-hills",

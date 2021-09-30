@@ -1,7 +1,7 @@
 {
     "name": "Temperate Wilds",
     "derivative": "PLAINS",
-    "rarity": 1,
+    "rarity": 3,
     "color": "#B6CF68",
     "vanillaDerivative": "PLAINS",
     "children": ["temperate/highlands"],

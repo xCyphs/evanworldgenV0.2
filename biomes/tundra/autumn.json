@@ -1,7 +1,7 @@
 {
     "name": "Tundra Autumn",
     "derivative": "TAIGA",
-    "rarity": 1,
+    "rarity": 2,
     "color": "#23EBA3",
     "vanillaDerivative": "DARK_FOREST",
     "children": ["tundra/redwood-cliffs"],

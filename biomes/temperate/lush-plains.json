@@ -8,7 +8,7 @@
         "max": 7,
         "generator": "plain"
     }],
-    "rarity": 2,
+    "rarity": 3,
     "biomeZoom": 30,
     "children": [
         "temperate/lush-plains-yellow",
